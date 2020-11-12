@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-end bg-secondary text-light text-decoration-none">
+    <div >
+        <a href="/post/{{id}}" class="text-light"><h5 class="m-0 ">{{title}}</h5></a>
+    </div>
+    <div><p style="font-size: 11px; width:220px" class="m-0 text-right">Posted by {{user.username}} on {{format_date createdAt}}</p></div>
+  </div>
+  <div class="card-body">
+    <p class="card-title">{{content}}</p>
+    
+  </div>
+</div>
