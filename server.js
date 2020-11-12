@@ -10,7 +10,7 @@ require('dotenv').config();
 
 
 const sess = {
-  secret: process.env.CK_SECRET,
+  secret: 'waYS&EUXl.gnj&r8y].7GbQX~46sl=ehwV>%H4!5HYl5.@K]L#',
   cookie: {},
   resave: false,
   saveUninitialized: true,
