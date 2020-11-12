@@ -13,7 +13,6 @@ router.get('/', (req,res)=>{
             posts,
             loggedIn: req.session.loggedIn
         });
-        console.log(posts[0]);
     }
         
     )
