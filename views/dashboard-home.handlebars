@@ -1,0 +1,32 @@
+<div class="d-flex justify-content-between pt-3">
+<h2 class="m-0 pb-2">Posts:</h2>
+<button id="new-post" class="btn btn-primary">Add post</button>
+</div>
+<hr>
+
+<div class="card my-3 border-secondary" style="display: none;" id="new-field" >
+    <div class="card-body">
+        <form id="new-post-form">
+            <div class="form-group">
+                <input class="form-control" id="title" placeholder="New title"></input>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="content" rows="7" placeholder="Write new post"></textarea>
+            </div>
+            <div class="text-right">
+                <button type="submit" id="publish" class="btn btn-primary">Add post</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id='preview-container'>
+    {{#each posts}}
+        <div class="py-2">
+            {{>preview}}
+        </div>
+    {{/each}}
+
+</div>
+
+<script src="/javascript/dashboard.js"></script>

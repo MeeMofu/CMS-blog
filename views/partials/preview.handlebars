@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-header p-3 d-flex justify-content-between align-items-top bg-dark text-light text-decoration-none rounded">
+        <div >
+            <a href="/post/{{id}}" class="text-light"><h5 class="m-0 ">{{title}}</h5></a><span>on {{format_date updatedAt}}</span>
+            {{!-- <p class="m-0 text-light"><span style="font-weight: bold;">{{title}} </span> on {{format_date updatedAt}}</p> --}}
+        </div>
+        <div >
+            <button type="button" class="edit btn btn-light" data-post={{id}}>Edit post</button>
+            <button type="button" class="delete btn btn-light " data-post={{id}}>Delete post</button>
+
+        </div>
+    </div>
+         <div class="card-body" style="display: none;" data-post={{id}}>
+            {{!-- <p class="card-title">{{content}}</p> --}}
+            <div class="form-group">
+                <textarea class="form-control" rows="7"> {{content}} </textarea>
+            </div>
+            <div class="text-right">
+                <button type="submit" class="update btn btn-primary" data-post={{id}}>Save changes</button>
+            </div>
+        </div>
+</div>

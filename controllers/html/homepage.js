@@ -6,7 +6,9 @@ router.get('/', (req,res)=>{
         {include:[{
             model:User,
             attributes:['username']
-        }]}
+        }],
+        order: [['updated_at','DESC']]
+      }
     ).then( data =>{
         const posts = data.map(post => post.get({ plain: true }));
         res.render('homepage',{
